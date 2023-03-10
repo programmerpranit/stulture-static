@@ -19,3 +19,12 @@ body {
   overflow-x: hidden;
   background-color: black;
 }
+
+.blink-animation {
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% {opacity: 0.5;}
+}

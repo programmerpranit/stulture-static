@@ -9,7 +9,11 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'ping-five': 'ping 1s linear 2',
+      }
+    },
   },
   plugins: [],
 }
