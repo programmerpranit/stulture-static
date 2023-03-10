@@ -53,7 +53,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-[url('/section3.png')] bg-center bg-cover text-center text-white md:h-screen h-[130vh] p-10">
+      <div className="bg-[url('/section3.png')] bg-center bg-cover text-center text-white md:h-screen h-screen p-10">
         <h2 className="text-2xl mt-5 text-white text-center">
           Bridging the GAP between Companies and Designers{" "}
         </h2>
