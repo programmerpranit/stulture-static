@@ -11,7 +11,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'ping-five': 'ping 1s linear 2',
+        'spin-slow': 'spin 3s linear infinite',
       }
     },
   },

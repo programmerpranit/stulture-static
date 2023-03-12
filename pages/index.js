@@ -1,15 +1,26 @@
+import { init } from "aos";
 import Image from "next/image";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+    });
+  }, []);
+
   return (
     <>
       <div className="top-section relative bg-[url('/top-background.png')] h-screen bg-cover flex justify-center items-center">
+        
         <button className="absolute top-3 right-3 px-5 py-1 text-sm font-extrabold  bg-white">
           Challenges &gt;
         </button>
 
         <div className="flex m-auto flex-col md:flex-row text-white text-center items-center justify-center">
-          <div className="">
+          <div data-aos="fade-right" data-aos-delay="2000" className="">
             <p>PLANET</p>
             <p className="font-bold">STULTURE</p>
           </div>
@@ -29,7 +40,7 @@ export default function Home() {
               alt={"logo"}
             />
           </div>
-          <div className="">
+          <div data-aos="fade-left" data-aos-delay="2000" className="">
             <p>HABITANTS</p>
             <p className="font-bold">DESIGNERS</p>
           </div>
@@ -83,9 +94,9 @@ export default function Home() {
         <div className="line m-2 h-0.5 w-1/2 bg-white mx-auto"></div>
 
         <div className="flex md:flex-row h-full pt-10 flex-col justify- items-center max-w-4xl m-auto">
-          <img src="/leauge.png" className=" md:w-2/5" alt="" />
+          <img src="/leauge.png" data-aos="fade-up-right" className=" md:w-2/5" alt="" />
 
-          <div className="bg-black bg-opacity-50 md:w-2/5 m-auto flex p-5">
+          <div data-aos="fade-up-left" className="bg-black bg-opacity-50 md:w-2/5 m-auto flex p-5">
             <div className="w-3/5 text-xs md:text-sm text-left flex flex-col justify-around">
               <p>
                 Accumulate PTS by outworking yourself and move up the Leagues
@@ -97,10 +108,10 @@ export default function Home() {
               </p>
             </div>
             <div className="w-1/5 ml-5">
-              <img src="/arial.png" alt="" className="my-5" />
-              <img src="/carbon.png" alt="" className="my-5" />
-              <img src="/pixel.png" alt="" className="my-5" />
-              <img src="/styrene.png" alt="" className="my-5" />
+              <img src="/arial.png" alt="" className="animate-spin-slow my-5" />
+              <img src="/carbon.png" alt="" className="animate-spin-slow my-5" />
+              <img src="/pixel.png" alt="" className="animate-spin-slow my-5" />
+              <img src="/styrene.png" alt="" className="animate-spin-slow my-5" />
             </div>
           </div>
         </div>
