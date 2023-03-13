@@ -40,7 +40,7 @@ export default function Home() {
               alt={"logo"}
             />
           </div>
-          <div data-aos="fade-left" data-aos-delay="2000" className="">
+          <div data-aos="fade-left" data-aos-offset="0" data-aos-delay="2000" className="">
             <p>HABITANTS</p>
             <p className="font-bold">DESIGNERS</p>
           </div>
@@ -49,15 +49,15 @@ export default function Home() {
 
       <div className="bg-[url('/sectiontwo.png')] bg-center bg-cover h-[130vh] pt-20">
         <div className="bg-gray-800 bg-opacity-50 w-2/4 text-white justify-between flex flex-col py-10 h-screen mx-5 p-5 rounded-lg">
-          <div className="">
+          <div data-aos="zoom-in-right" className="">
             <h2>THE FUTURE</h2>
             <p>Be a part of the next generation of superior designers</p>
           </div>
-          <div className="">
+          <div data-aos="zoom-in-right" className="">
             <h2>COMPETITIONS</h2>
             <p>Take part in challenges and earn rewards for your hard work</p>
           </div>
-          <div className="">
+          <div data-aos="zoom-in-right" className="">
             <h2>Des vs Des</h2>
             <p>Complete with designers all over the Stulture Network</p>
           </div>
@@ -65,24 +65,24 @@ export default function Home() {
       </div>
 
       <div className="bg-[url('/section3.png')] bg-center bg-cover text-center text-white md:h-screen h-screen p-10">
-        <h2 className="text-2xl mt-5 text-white text-center">
+        <h2 data-aos="zoom-in" className="text-2xl mt-5 text-white text-center">
           Bridging the GAP between Companies and Designers{" "}
         </h2>
 
-        <div className="line my-10 h-1 w-1/2 bg-white mx-auto"></div>
+        <div data-aos="zoom-in" className="line my-10 h-1 w-1/2 bg-white mx-auto"></div>
 
-        <p className="my-10 text-sm">
+        <p data-aos="zoom-in" className="my-10 text-sm">
           The Stulture Network helps Companies connect with the best potential
           designers to hire while also helping the designers get exposed to
           various companies.
         </p>
 
-        <p className="my-10 text-sm">
+        <p data-aos="zoom-in" className="my-10 text-sm">
           We do so by hosting design competitions on behalf of various companies
           that are scouting to hire new designers .
         </p>
 
-        <p className="my-10 text-sm">
+        <p data-aos="zoom-in" className="my-10 text-sm">
           Hosting customised design competitions helps the companies hire the
           right designers for the comapnies specific needs .
         </p>
@@ -124,8 +124,8 @@ export default function Home() {
       </div>
 
       <div className=" bg-[url('/carbon-pod.png')] bg-center bg-cover flex flex-col justify-center items-center text-white h-screen p-10">
-        <h2 className="text-2xl mt-5 text-white ">S T L T R V R S</h2>
-        <p>COMING SOON</p>
+        <h2 data-aos="zoom-in" className="text-2xl mt-5 text-white ">S T L T R V R S</h2>
+        <p data-aos="zoom-in">COMING SOON</p>
       </div>
 
       <div className="bg-stone-900 p-10 text-center my-10">
