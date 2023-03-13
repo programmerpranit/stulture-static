@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Link from "next/link";
 
 export default function Home() {
   useEffect(() => {
@@ -15,9 +16,11 @@ export default function Home() {
     <>
       <div className="top-section relative bg-[url('/top-background.png')] h-screen bg-cover flex justify-center items-center">
         
+        <Link href={'/challenges'} >
         <button className="absolute top-3 right-3 px-5 py-1 text-sm font-extrabold  bg-white">
           Challenges &gt;
         </button>
+        </Link>
 
         <div className="flex m-auto flex-col md:flex-row text-white text-center items-center justify-center">
           <div data-aos="fade-right" data-aos-delay="2000" className="">
@@ -147,9 +150,11 @@ export default function Home() {
       </div>
 
       <div className="w-full text-center my-5">
+      <Link href={'/challenges'} >
         <button className="px-20 py-2 text-lg font-extrabold  bg-white">
           ENTER
         </button>
+      </Link>
       </div>
     </>
   );
